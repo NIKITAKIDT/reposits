@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ТК ЛОГИСТИК+</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(94287137, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/94287137" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <meta name="description" content="Перевозка тёмных нефтепродуктов Рязань">
+		<style>
+			.fon_main {
+			}
+		</style>
+	</head>
+	<body>
+
+		
+		<main>
+			<div class="fon_main"><img src="image/transp.png" width="1600" height="1068" alt=""></div>
+			<div id="glav">
+				<span style="color: white; font-size: xx-large; "><p align="left">Логистика тёмных нефтепродуктов</p></span>
+				<font color="gray" size="5"><p align="left">Мы перевозим темные нефтепродукты в любую точку Росии и стран СНГ одним из недорогих и простых способов доставки.</p></font>
+			</div>
+			
+			<div id="onas">
+				<div class="serc"><img src="image/2.png" width="250" height="250"></div>
+				<div class="spech">
+					<p><font color="white" size="7">Специализируемся на автоперевозках нефтяных изделий</font></p>
+					<font color="white" size="5">Видим рынок комплексно, знаем его в лицах и понимаем в деталях. Разбираемся в продукте, процессах налива, хранения, транспортировки. Знаем, как проконтролировать качество и сохранить количество продукта. </font>
+				</div>
+				<div class="serc2"><img src="image/3.png" width="250" height="250"></div>
+				<div class="spech2">
+					<p><font color="white" size="7">Знакомимся и работаем «на земле».</font></p>
+					<font color="white" size="5">Не отсиживаемся в офисе и вручную собираем логистические схемы на местах. Знакомимся лично и предлагаем нешаблонные варианты, чтобы вы решили свою задачу и уложились в срок. </font>
+				</div>
+			</div>
+			<hr></hr>
+			<div class="hrf">
+				<div class="treg_1"></div>
+				<div class="treg_2"></div>
+				<div class="treg_3"></div>
+				<div class="frame_1">
+					<font class="zgl" color="black" size="6"><p align="center">Обратитесь к нам.</p></font>
+					<font color="black" size="4"><p align="center">Оставте заявку и мы вам перезвоним в ближайшее время.</p></font>
+					<form method="post" action="testreg.php">
+						<div class="data">
+							<p><label>Ваше имя</label></p>
+							<p><input type="text" name="email" id="email" required></p>
+							<p><label>Номер телефона (Обязательно)</label></p>
+							<p><input type="text" name="message" id="firstName"></p>
+							<input id="submit" type="button" class="btn-submit" value="Отправить" />
+						</div>
+					<div class="clr"> d</div>
+					</form>
+					<script>
+                        $(document).ready(function() {
+
+                            $("#submit").click(function() {
+
+                                var firstName = $("#firstName").val();
+                                var email = $("#email").val();
+
+
+                                if(firstName==''||email=='') {
+                                    alert("Please fill all fields.");
+                                    return false;
+                                }
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: "store.php",
+                                    data: {
+                                        firstName: firstName,
+                                        email: email,
+
+                                    },
+                                    cache: false,
+                                    success: function(data) {
+                                        alert(data);
+                                    },
+                                    error: function(xhr, status, error) {
+                                        console.error(xhr);
+                                    }
+                                });
+
+                            });
+
+                        });
+</script>
+				</div>
+
+			</div>
+			<hr></hr>
+		</main>
+		<footer>
+			<div class="info">
+				<font color="white" size="5"><p align="left">ООО "ТК ЛОГИСТИК+"</p></font>
+				<font color="white" size="5"><p align="left">+7(900)910 50-32</p></font>
+				<font color="white" size="4"><p align="left">e-mail: ablajilin@mail.ru</p></font>
+				<font color="white" size="4"><p align="left">ИНН: 6219008428</p></font>
+				<font color="white" size="4"><p align="left">КПП: 621901001</p></font>
+				<font color="white" size="4"><p align="left">ОКПО: 97374931</p></font>
+			</div>
+			<div class="location">
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4bdc8b47e176c5523decdf6cf3e22a48464bb32f2029d34f78b9f7954cadd59c&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+			</div>
+		</footer>
+	</body>
+</html>

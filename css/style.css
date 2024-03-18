@@ -1,0 +1,167 @@
+body {
+	background: black;
+	max-width: 1440px;
+	margin: auto;
+}
+heder {
+	position: fixed;
+	height: 100px;
+	background: gray;
+	padding: 20px 0px 0px 0px;
+	z-index: 3;
+	opacity: 0.8;
+	border-radius: 7px;
+
+	
+}
+#menu {
+	background: green;
+	height: 70px;
+	width: 1440px;
+	margin: auto;
+}
+.logo {
+	background: url(../image/llo.png);
+	height: 70px;
+	width: 200px;
+}
+main {
+	padding-top: 120px;
+	margin-top: -120px;
+	
+}
+.fon_main img {
+	position: absolute;
+	z-index: -1;
+	opacity: 0.4;
+}
+#glav {
+	display:block;
+	width: 500px;
+	height: 649px;
+	margin: 250px 0px 0px 200px;
+
+}
+.treg_1 {
+	display: block;
+	margin: auto;
+	z-index: -1;
+	width: 1000px;
+	height: 700px;
+	-webkit-transform: skew(32.2deg);
+	   -moz-transform: skew(32.2deg);
+	     -o-transform: skew(32.2deg);
+	background: white;
+}
+.treg_2 {
+	backgrond: Url(../image/fon.png);
+	margin-top: -700px;
+	width: 1440px;
+	height: 700px;
+
+}
+.frame_1 {
+	position: relative;
+	margin-top: -600px;
+}
+.frame_1 zgl {
+	font-weight: bold;
+}
+.data {
+	display: block;
+	margin: auto 40% auto;
+}
+.data label {
+	align: left;
+	font-weight: bold;
+}
+.data input {
+	width: 300px;
+	border: 1px solid #D7E1E9;
+	border-radius: 7px;
+    background: #f5f6f8;
+    margin: 0;
+    padding: 0.9rem 1rem;
+    height: auto;
+	border-radius: 7px;
+    background: #f5f6f8;
+    margin: 0;
+}
+.data button {
+	height: 60px;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+	color: #ffffff;
+    background-color: #d12a10;
+	outline: none;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto',Arial,sans-serif;
+    border: 0 none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-weight: 700;
+    background-image: none;
+    cursor: pointer;
+    -webkit-appearance: none;	
+}
+
+#onas {
+	margin: 250px 0px 1100px 0px;
+}
+.serc {
+	display: block;
+	float: left;
+	width: 250px;
+	height: 250px;
+}	
+.spech {
+	margin: 0px 0px 100px 100px;
+	display: block;
+	width: 1000px;
+	float: left;
+	
+}
+.serc2 {
+	margin: 100px 0px 0px 0px;
+	display: block;
+	float: right;
+	width: 250px;
+	height: 250px;
+}
+.spech2 {
+	margin: 100px 50px 100px 100px;
+	display: block;
+	width: 1000px;
+	float: left;
+	
+}
+.clr {
+	margin: 180px 0px 0px 0px;
+}
+main hr {
+	height: 10px;
+	color: white;
+	background: white;
+}
+.hrf {
+	margin: -10px 0px 20px 0px;
+}
+.info {
+	display: block;
+	float: left;
+	margin-left: 200px;
+}
+.location {
+	display: block;
+	float: right;
+	margin-right: 200px;
+}
+.erro {
+	margin: 400px 400px 0px 200px;
+}
+.error {
+	margin: 0px 300px 0px 200px;
+}
